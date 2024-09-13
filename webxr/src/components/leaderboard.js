@@ -26,6 +26,8 @@ const Leaderboard = () => {
 			}
 		)
 		const avatardata = await avatar.json()
+		console.log("avatar",avatardata);
+		
 		// setAvatar(avatardata);
 		setAvatar([...avatardata].reverse())
 	}

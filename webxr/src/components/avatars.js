@@ -4,9 +4,11 @@ import Link from 'next/link'
 import { Avatar } from '@readyplayerme/visage'
 
 const HotNftCard = ({ nft }) => {
+	
 	return (
 		<div style={{ position: 'relative', display: 'inline-block' }}>
-			<Link href={`https://webxr.myriadflow.com/${nft.phygital_id}`}>
+			{/* <Link href={`https://webxr.myriadflow.com/${nft.phygital_id}`}> */}
+			<Link href={`http://localhost:3000/${nft.phygital_id}`}>
 				<div style={{ 
 					width: '330px', 
 					borderRadius: '30px', 
