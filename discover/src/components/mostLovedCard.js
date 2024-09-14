@@ -2,7 +2,7 @@
 import React , {useEffect, useState} from 'react';
 import Link from 'next/link';
 
-const MostLovedCard = ({nft}) => {
+const MostLovedCard = ({nft, fantokensCount}) => {
 
   const [logo , setLogos] = useState("");
   const [lowestPrice, setlowestPrice] = useState("");
@@ -231,7 +231,7 @@ try {
           :
           (
           <div>
-            <div className="text-xl">Starts from {lowestPrice} ETH</div>
+            <div className="text-xl">Starts from {lowestPrice} ETH {fantokensCount > 0 && `- ${0.01 * fantokensCount} (tokens)`}</div>
             <div>{lowestPriceUSD} USD</div>
           </div>)}
           <div
